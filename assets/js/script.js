@@ -42,9 +42,10 @@ $(document).ready(function () {
 
   // <!-- emailjs to mail contact form data -->
   $("#contact-form").submit(function (event) {
-    emailjs.init("Mqp68Al63AQtRzE-Z");
+    event.preventDefault();
+    emailjs.init("kjpS1q2xDnKUoQR05");
 
-    emailjs.sendForm("service_tce3vzp").then(
+    emailjs.sendForm("service_tce3vzp", "template_ap4aquu", this).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         document.getElementById("contact-form").reset();
@@ -55,7 +56,7 @@ $(document).ready(function () {
         alert("Form Submission Failed! Try Again");
       },
     );
-    event.preventDefault();
+    // event.preventDefault();
   });
   // <!-- emailjs to mail contact form data -->
 });
