@@ -1257,3 +1257,64 @@ form .button-area {
   cursor: not-allowed;
   opacity: 0.8;
 }
+
+
+.achievements {
+  padding: 5rem 9%;
+  background: #f9f9f9;
+}
+
+.achievements-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.achievement-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-image img {
+  width: 300px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-content h3 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.achievement-content p {
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.achievement-content .tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  background: #007bff;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
